@@ -46,7 +46,7 @@ body {
   margin-top: 15px;
 }
 
-.buttons .decrypt {
+#decrypt {
   border-radius: 24px;
   border: 1px solid #0a3871;
   padding: 20px;
@@ -55,7 +55,7 @@ body {
   width: 100%;
 }
 
-.buttons .encrypt {
+#encrypt {
   border-radius: 24px;
   border: none;
   background-color: #0a3871;
