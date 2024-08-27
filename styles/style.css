@@ -17,7 +17,8 @@ body {
   border: none;
   width: 100%;
   min-height: 150px;
-
+  color: #0a3871;
+  font-size: 24px;
   padding: 10px 5px;
   resize: vertical;
   margin-top: 10px;
@@ -43,10 +44,16 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  font-size: 16px;
   margin-top: 15px;
 }
 
-#decrypt {
+button:hover {
+  cursor: pointer;
+}
+
+#decrypt,
+#copy {
   border-radius: 24px;
   border: 1px solid #0a3871;
   padding: 20px;
@@ -64,10 +71,9 @@ body {
   width: 100%;
 }
 
-.output {
+#output {
   background-color: white;
-  padding: 20px 40px;
-  text-align: center;
+  padding: 20px;
   border-radius: 32px;
   box-shadow: #868e96;
   margin-top: 40px;
@@ -75,10 +81,17 @@ body {
 
   h2 {
     color: #343a40;
+    text-align: center;
   }
   p {
     color: #495057;
+    margin-bottom: 40px;
+    text-align: center;
   }
+}
+
+.oculto {
+  display: none;
 }
 
 @media screen and (min-width: 900px) {
@@ -87,3 +100,6 @@ body {
     justify-content: space-between;
   }
 }
+/*
+La ley de gravedad siempre me atrae hacia ti
+*/
