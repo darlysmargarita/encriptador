@@ -16,7 +16,6 @@ function encriptar(texto) {
   return resultado;
 }
 
-// Función para desencriptar el texto
 const desencriptar = (texto) => {
   let resultado = "";
   for (let i = 0; i < texto.length; i++) {
@@ -38,12 +37,11 @@ async function copiarTexto() {
   await navigator.clipboard.writeText(textoEncriptado);
 }
 
-// Constantes
+// Eventos
 const input = document.getElementById("textbox");
 const encryptBtn = document.getElementById("encrypt");
 const decryptBtn = document.getElementById("decrypt");
 
-// Eventos
 encryptBtn.addEventListener("click", () => {
   const copyBtn = document.getElementById("copy");
   copyBtn.classList.remove("oculto");
